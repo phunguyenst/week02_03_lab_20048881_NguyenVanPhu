@@ -2,6 +2,9 @@ package iuh.vn.edu.fit.lab_week2_20048881_nguyenvanphu;
 
 import java.io.*;
 
+import iuh.vn.edu.fit.connect.ConnectDB;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -16,11 +19,9 @@ public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+        EntityManager em = ConnectDB.getConnectDB().getEmf().createEntityManager();
+        EntityTransaction tr = em.getTransaction();
+        tr.begin();
     }
 
     public void destroy() {

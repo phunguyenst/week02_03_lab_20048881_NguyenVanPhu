@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class Customer {
     //customer (cust_id, cust_name, email, phone, address)
     @Id
-    @Column(name = "cust_id")
+    @Column(name = "cust_id", columnDefinition = "bigint(20)")
     private long id;
     @Column(name = "cust_name")
     private String name;

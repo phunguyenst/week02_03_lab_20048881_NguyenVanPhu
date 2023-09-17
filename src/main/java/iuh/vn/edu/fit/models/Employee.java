@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class Employee {
     //employee (emp_id, full_name, dob, email, phone, address, status)
     @Id
-    @Column(name = "emp_id")
+    @Column(name = "emp_id", columnDefinition = "bigint(20)")
     private long id;
 
     @Column(name = "full_name")
@@ -25,12 +25,12 @@ public class Employee {
 
     private String address;
 
-    private String status;
+    private EmployeeStatus status;
 
     public Employee() {
     }
 
-    public Employee(long id, String fullName, LocalDateTime dob, String email, String phone, String address, String status) {
+    public Employee(long id, String fullName, LocalDateTime dob, String email, String phone, String address, EmployeeStatus status) {
         this.id = id;
         this.fullName = fullName;
         this.dob = dob;
@@ -68,9 +68,7 @@ public class Employee {
         return address;
     }
 
-    public String getStatus() {
-        return status;
-    }
+
 
 
 
@@ -94,7 +92,11 @@ public class Employee {
         this.address = address;
     }
 
-    public void setStatus(String status) {
+    public EmployeeStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(EmployeeStatus status) {
         this.status = status;
     }
 
@@ -107,7 +109,7 @@ public class Employee {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", status='" + status + '\'' +
+                ", status=" + status +
                 '}';
     }
 }

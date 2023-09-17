@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 public class Product {
     //product (product_id, name, description, unit, manufacturer_name, status)
     @Id
-    @Column(name = "product_id")
+    @Column(name = "product_id", columnDefinition = "bigint(20)")
     private long id;
 
     private String name;
