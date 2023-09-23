@@ -1,4 +1,4 @@
-package iuh.vn.edu.fit.connect;
+package iuh.vn.edu.fit.repositories;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

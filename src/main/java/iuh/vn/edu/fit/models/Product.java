@@ -1,9 +1,9 @@
 package iuh.vn.edu.fit.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import iuh.vn.edu.fit.enums.ProductStatus;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -11,6 +11,7 @@ public class Product {
     //product (product_id, name, description, unit, manufacturer_name, status)
     @Id
     @Column(name = "product_id", columnDefinition = "bigint(20)")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String name;
@@ -21,9 +22,18 @@ public class Product {
     @Column(name = "manufacturer_name")
     private String manufacturerName;
 
+    @Enumerated(EnumType.ORDINAL)
+    @Column(columnDefinition = "int")
     private ProductStatus status;
 
+    @OneToMany(mappedBy = "product")
+    private List<ProductImage> productImageList;
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
+    private List<OrderDetail> orderDetailList;
+
+
     public Product() {
+
     }
 
     public Product(long id, String name, String description, String unit, String manufacturerName, ProductStatus status) {
@@ -83,6 +93,22 @@ public class Product {
         this.status = status;
     }
 
+    public List<ProductImage> getProductImageList() {
+        return productImageList;
+    }
+
+    public void setProductImageList(List<ProductImage> productImageList) {
+        this.productImageList = productImageList;
+    }
+
+    public List<OrderDetail> getOrderDetailList() {
+        return orderDetailList;
+    }
+
+    public void setOrderDetailList(List<OrderDetail> orderDetailList) {
+        this.orderDetailList = orderDetailList;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -92,6 +118,8 @@ public class Product {
                 ", unit='" + unit + '\'' +
                 ", manufacturerName='" + manufacturerName + '\'' +
                 ", status=" + status +
+                ", productImageList=" + productImageList +
+                ", orderDetailList=" + orderDetailList +
                 '}';
     }
 }

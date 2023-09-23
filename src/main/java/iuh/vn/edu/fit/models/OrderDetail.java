@@ -2,6 +2,8 @@ package iuh.vn.edu.fit.models;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 @Entity
 @Table(name = "order_detail")
 public class OrderDetail {
@@ -32,6 +34,19 @@ public class OrderDetail {
         this.quantity = quantity;
         this.price = price;
         this.note = note;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        OrderDetail that = (OrderDetail) o;
+        return Objects.equals(order, that.order) && Objects.equals(product, that.product);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(order, product);
     }
 
     public Order getOrder() {

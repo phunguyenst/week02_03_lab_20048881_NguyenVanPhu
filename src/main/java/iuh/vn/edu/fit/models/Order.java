@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 public class Order {
     //order (order_id, order_date, emp_id, cust_id)
     @Id
@@ -21,7 +21,7 @@ public class Order {
     private Employee employee;
 
     @ManyToOne
-    @JoinColumn(name = "cus_id")
+    @JoinColumn(name = "cust_id")
     private Customer customer;
 
     public Order() {

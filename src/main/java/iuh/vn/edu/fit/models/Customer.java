@@ -1,11 +1,9 @@
 package iuh.vn.edu.fit.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "customer")
@@ -13,6 +11,7 @@ public class Customer {
     //customer (cust_id, cust_name, email, phone, address)
     @Id
     @Column(name = "cust_id", columnDefinition = "bigint(20)")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "cust_name")
     private String name;
@@ -23,6 +22,9 @@ public class Customer {
 
     private String address;
 
+
+    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY)
+    private List<Order> orderList;
     public Customer() {
     }
 
@@ -73,6 +75,15 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public List<Order> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(List<Order> orderList) {
+        this.orderList = orderList;
+    }
+
 
     @Override
     public String toString() {

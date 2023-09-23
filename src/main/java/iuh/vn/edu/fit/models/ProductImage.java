@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 public class ProductImage {
     //product_image (product_id, image_id, path, alternative)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "image_id", columnDefinition = "bigint(20)")
     private long image_id;
 

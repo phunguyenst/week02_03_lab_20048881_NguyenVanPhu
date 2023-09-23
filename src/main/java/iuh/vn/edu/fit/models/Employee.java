@@ -1,30 +1,34 @@
 package iuh.vn.edu.fit.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import iuh.vn.edu.fit.enums.EmployeeStatus;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
 @Entity
 @Table(name = "employee")
 public class Employee {
     //employee (emp_id, full_name, dob, email, phone, address, status)
     @Id
     @Column(name = "emp_id", columnDefinition = "bigint(20)")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "full_name")
     private String fullName;
-
+    @Column(columnDefinition = "datetime(6)")
     private LocalDateTime dob;
 
     private String email;
 
+    @Column(columnDefinition = "varchar(15)")
     private String phone;
 
     private String address;
 
+    @Enumerated(EnumType.ORDINAL)
+    @Column(columnDefinition = "int")
     private EmployeeStatus status;
 
     public Employee() {
