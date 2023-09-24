@@ -1,7 +1,7 @@
-<%@ page import="iuh.vn.edu.fit.repositories.ProductReponsitory" %>
-<%@ page import="iuh.vn.edu.fit.models.Product" %>
+<%@ page import="iuh.vn.edu.fit.backend.repositories.ProductReponsitory" %>
+<%@ page import="iuh.vn.edu.fit.backend.models.Product" %>
 <%@ page import="java.util.List" %>
-<%@ page import="iuh.vn.edu.fit.models.ProductImage" %>
+<%@ page import="iuh.vn.edu.fit.backend.models.ProductImage" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>

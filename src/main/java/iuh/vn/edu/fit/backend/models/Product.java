@@ -1,4 +1,4 @@
-package iuh.vn.edu.fit.models;
+package iuh.vn.edu.fit.backend.models;
 
 import iuh.vn.edu.fit.enums.ProductStatus;
 import jakarta.persistence.*;

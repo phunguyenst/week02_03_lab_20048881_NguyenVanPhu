@@ -1,4 +1,4 @@
-package iuh.vn.edu.fit.models;
+package iuh.vn.edu.fit.backend.models;
 
 import jakarta.persistence.*;
 

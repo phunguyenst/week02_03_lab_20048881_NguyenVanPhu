@@ -1,14 +1,10 @@
-package iuh.vn.edu.fit.resources;
+package iuh.vn.edu.fit.backend.resources;
 
 import java.io.*;
 import java.util.List;
 
-import iuh.vn.edu.fit.models.Product;
-import iuh.vn.edu.fit.repositories.ConnectDB;
-import iuh.vn.edu.fit.repositories.ProductReponsitory;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
-import jakarta.servlet.ServletContext;
+import iuh.vn.edu.fit.backend.models.Product;
+import iuh.vn.edu.fit.backend.repositories.ProductReponsitory;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

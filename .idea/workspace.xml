@@ -5,36 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="config JPA and create entity">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/configs/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ProductPriceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ProductReponsitory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/ProductPriceResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/ProductResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/ProductPriceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/test/ProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all-products.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/connect/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ConnectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/lab_week2_20048881_nguyenvanphu/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/EmployeeStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/enums/EmployeeStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/enums/ProductStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/configs/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/configs/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/enums/EmployeeStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/enums/ProductStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ProductPriceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductPriceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/repositories/ProductReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductReponsitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/ProductPriceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductPriceResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/ProductPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/test/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all-products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all-products.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Mapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,27 +89,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab1/week01_lab_NguyenVanPhu_20048881&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "T:/20048881_nguyenVanPhu/week02_lab_20048881_NguyenVanPhu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="iuh.vn.edu.fit.models" />
@@ -120,7 +118,7 @@
       <recent name="E:\BTHH_WWW\lab2\week02_lab_20048881_NguyenVanPhu\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.11">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Mapping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mapping" />
       <module name="lab_week2_20048881_NguyenVanPhu.test" />
@@ -137,6 +135,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="lab_week2_20048881_NguyenVanPhu.test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,6 +243,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test" />
       <item itemvalue="Application.ProductTest" />
       <item itemvalue="Application.Mapping" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -283,6 +289,7 @@
       <workItem from="1695439760653" duration="734000" />
       <workItem from="1695456295846" duration="660000" />
       <workItem from="1695475621727" duration="58000" />
+      <workItem from="1695512591163" duration="4054000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -306,7 +313,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/models/Order.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

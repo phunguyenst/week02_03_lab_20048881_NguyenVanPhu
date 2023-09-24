@@ -1,8 +1,7 @@
-package iuh.vn.edu.fit.services;
+package iuh.vn.edu.fit.backend.services;
 
-import iuh.vn.edu.fit.models.ProductPrice;
-import iuh.vn.edu.fit.repositories.ProductPriceRepository;
-import jakarta.inject.Inject;
+import iuh.vn.edu.fit.backend.models.ProductPrice;
+import iuh.vn.edu.fit.backend.repositories.ProductPriceRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;

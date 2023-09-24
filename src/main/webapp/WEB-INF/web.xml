@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>MyHelloServlet</servlet-name>
-        <servlet-class>iuh.vn.edu.fit.resources.HelloServlet</servlet-class>
+        <servlet-class>iuh.vn.edu.fit.backend.resources.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MyHelloServlet</servlet-name>

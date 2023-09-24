@@ -1,4 +1,4 @@
-import iuh.vn.edu.fit.repositories.ConnectDB;
+import iuh.vn.edu.fit.backend.repositories.ConnectDB;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 

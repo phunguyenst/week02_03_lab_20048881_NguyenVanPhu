@@ -1,6 +1,6 @@
-package iuh.vn.edu.fit.repositories;
+package iuh.vn.edu.fit.backend.repositories;
 
-import iuh.vn.edu.fit.models.Product;
+import iuh.vn.edu.fit.backend.models.Product;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.TypedQuery;

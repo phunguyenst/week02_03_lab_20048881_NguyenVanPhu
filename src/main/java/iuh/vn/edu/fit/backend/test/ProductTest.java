@@ -1,8 +1,6 @@
-package iuh.vn.edu.fit.test;
+package iuh.vn.edu.fit.backend.test;
 
-import iuh.vn.edu.fit.models.Product;
-import iuh.vn.edu.fit.repositories.ProductReponsitory;
-import iuh.vn.edu.fit.services.ProductService;
+import iuh.vn.edu.fit.backend.repositories.ProductReponsitory;
 
 public class ProductTest {
     public static void main(String[] args) {

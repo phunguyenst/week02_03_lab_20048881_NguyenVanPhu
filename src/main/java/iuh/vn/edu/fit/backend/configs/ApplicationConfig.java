@@ -1,6 +1,6 @@
-package iuh.vn.edu.fit.configs;
+package iuh.vn.edu.fit.backend.configs;
 
-import iuh.vn.edu.fit.repositories.ConnectDB;
+import iuh.vn.edu.fit.backend.repositories.ConnectDB;
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 

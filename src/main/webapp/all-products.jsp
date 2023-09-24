@@ -1,7 +1,7 @@
-<%@ page import="iuh.vn.edu.fit.repositories.ProductReponsitory" %>
+<%@ page import="iuh.vn.edu.fit.backend.repositories.ProductReponsitory" %>
 <%@ page import="java.util.List" %>
-<%@ page import="iuh.vn.edu.fit.models.Product" %>
-<%@ page import="iuh.vn.edu.fit.models.ProductImage" %><%--
+<%@ page import="iuh.vn.edu.fit.backend.models.Product" %>
+<%@ page import="iuh.vn.edu.fit.backend.models.ProductImage" %><%--
   Created by IntelliJ IDEA.
   User: admin
   Date: 9/21/2023

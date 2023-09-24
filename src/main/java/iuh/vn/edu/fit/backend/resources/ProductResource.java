@@ -1,7 +1,7 @@
-package iuh.vn.edu.fit.resources;
+package iuh.vn.edu.fit.backend.resources;
 
-import iuh.vn.edu.fit.models.Product;
-import iuh.vn.edu.fit.services.ProductService;
+import iuh.vn.edu.fit.backend.models.Product;
+import iuh.vn.edu.fit.backend.services.ProductService;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;

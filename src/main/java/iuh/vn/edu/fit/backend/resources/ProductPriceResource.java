@@ -1,13 +1,10 @@
-package iuh.vn.edu.fit.resources;
+package iuh.vn.edu.fit.backend.resources;
 
-import iuh.vn.edu.fit.models.ProductPrice;
-import iuh.vn.edu.fit.services.ProductPriceService;
-import jakarta.inject.Inject;
+import iuh.vn.edu.fit.backend.models.ProductPrice;
+import iuh.vn.edu.fit.backend.services.ProductPriceService;
 import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
