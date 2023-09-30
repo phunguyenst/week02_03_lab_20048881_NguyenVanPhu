@@ -1,17 +1,22 @@
 package iuh.vn.edu.fit.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "product_image")
-public class ProductImage {
+public class ProductImage implements Serializable {
     //product_image (product_id, image_id, path, alternative)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "image_id", columnDefinition = "bigint(20)")
     private long image_id;
 
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
 
@@ -65,7 +70,6 @@ public class ProductImage {
     public String toString() {
         return "ProductImage{" +
                 "image_id=" + image_id +
-                ", product=" + product +
                 ", alternative='" + alternative + '\'' +
                 ", path='" + path + '\'' +
                 '}';

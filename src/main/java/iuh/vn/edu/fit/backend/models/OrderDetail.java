@@ -1,19 +1,24 @@
 package iuh.vn.edu.fit.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.util.Objects;
 
 @Entity
 @Table(name = "order_detail")
+//@NamedQueries({
+//        @NamedQuery(name = "OrderDetail.getAll", query = "FROM OrderDetail "),
+//})
 public class OrderDetail {
     //order_detail (order_id, product_id, quantity, price, note)
-
+    @JsonBackReference
     @Id
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;
 
+    @JsonBackReference
     @Id
     @ManyToOne
     @JoinColumn(name = "product_id")
@@ -93,7 +98,6 @@ public class OrderDetail {
     public String toString() {
         return "OrderDetail{" +
                 "order=" + order +
-                ", product=" + product +
                 ", quantity=" + quantity +
                 ", price=" + price +
                 ", note='" + note + '\'' +

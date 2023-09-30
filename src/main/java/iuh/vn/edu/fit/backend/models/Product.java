@@ -1,35 +1,47 @@
 package iuh.vn.edu.fit.backend.models;
 
-import iuh.vn.edu.fit.enums.ProductStatus;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import iuh.vn.edu.fit.backend.converters.ProductStatusConverter;
+import iuh.vn.edu.fit.backend.enums.ProductStatus;
+
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "product")
-public class Product {
+@NamedQueries({
+        @NamedQuery(name = "Product.findAll", query = "SELECT p FROM Product p WHERE p.status = ?1"),
+        @NamedQuery(name = "Product.findById", query = "SELECT p FROM Product p WHERE p.id = ?1"),
+        @NamedQuery(name = "Product.updateStatus", query = "UPDATE Product roduct SET status = :status WHERE id = :id")
+})
+
+public class Product implements Serializable {
     //product (product_id, name, description, unit, manufacturer_name, status)
     @Id
     @Column(name = "product_id", columnDefinition = "bigint(20)")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String name;
-
     private String description;
-
     private String unit;
     @Column(name = "manufacturer_name")
     private String manufacturerName;
-
-    @Enumerated(EnumType.ORDINAL)
-    @Column(columnDefinition = "int")
+    @Convert(converter = ProductStatusConverter.class)
+    @Column(columnDefinition = "INT(11)")
     private ProductStatus status;
-
-    @OneToMany(mappedBy = "product")
-    private List<ProductImage> productImageList;
-    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
-    private List<OrderDetail> orderDetailList;
+    @JsonManagedReference
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ProductImage> productImageList = new ArrayList<>();
+    @JsonManagedReference
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<OrderDetail> orderDetails = new ArrayList<>();
+    @JsonManagedReference
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ProductPrice> productPrices = new ArrayList<>();
 
 
     public Product() {
@@ -38,6 +50,15 @@ public class Product {
 
     public Product(long id, String name, String description, String unit, String manufacturerName, ProductStatus status) {
         this.id = id;
+        this.name = name;
+        this.description = description;
+        this.unit = unit;
+        this.manufacturerName = manufacturerName;
+        this.status = status;
+    }
+
+
+    public Product(String name, String description, String unit, String manufacturerName, ProductStatus status) {
         this.name = name;
         this.description = description;
         this.unit = unit;
@@ -101,12 +122,33 @@ public class Product {
         this.productImageList = productImageList;
     }
 
-    public List<OrderDetail> getOrderDetailList() {
-        return orderDetailList;
+    public List<OrderDetail> getOrderDetails() {
+        return orderDetails;
     }
 
-    public void setOrderDetailList(List<OrderDetail> orderDetailList) {
-        this.orderDetailList = orderDetailList;
+    public void setOrderDetails(List<OrderDetail> orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
+    public List<ProductPrice> getProductPrices() {
+        return productPrices;
+    }
+
+    public void setProductPrices(List<ProductPrice> productPrices) {
+        this.productPrices = productPrices;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override
@@ -119,7 +161,8 @@ public class Product {
                 ", manufacturerName='" + manufacturerName + '\'' +
                 ", status=" + status +
                 ", productImageList=" + productImageList +
-                ", orderDetailList=" + orderDetailList +
+                ", orderDetails=" + orderDetails +
+                ", productPrices=" + productPrices +
                 '}';
     }
 }

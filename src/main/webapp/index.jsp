@@ -6,22 +6,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<form action="hello-servlet" method="get">
-    <input type="hidden" name="action" value="MappingTable">
-    <input name="MappingTable" type="submit" value="MappingTable">
+<%--    <div class="container">--%>
+<%--        <div class="card w-30 mx-auto my-5">--%>
+<%--            <div class="card-hearder text-center">User login </div>--%>
+<%--            <div class="card-body">--%>
+<%--                <form action="" method="post">--%>
+<%--                    <div class="form-group">--%>
+<%--                        <label>Email Address</label>--%>
+<%--                        <input type="email" class="form-control" name="login-email" id="login-email" placeholder="Enter Your Email" required>--%>
+<%--                    </div>--%>
+<%--                    <div class="form-group">--%>
+<%--                        <label>Password</label>--%>
+<%--                        <input type="password" class="form-control" name="login-password" id="login-password" placeholder="********" required>--%>
+<%--                    </div>--%>
+<%--                    <div class="text-center">--%>
+<%--                       <button type="submit" class="btn btn-primary">Login</button>--%>
+<%--                     </div>--%>
 
-</form>
+<%--                </form>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
-<%--<a href="all-products.jsp">getAllProduct</a>--%>
-<form action="hello-servlet" method="get">
-    <input type="hidden" name="action" value="allproduct">
-    <input name="allproduct" type="submit" value="allproduct">
-</form>
+<a href="pageEmployee.jsp">quản lý nhân viên</a>
+<a href="pageCustomer.jsp">quản lý sản phẩm</a>
+<a href="pageProduct.jsp">danh sách sản phẩm</a>
+
 </body>
 </html>

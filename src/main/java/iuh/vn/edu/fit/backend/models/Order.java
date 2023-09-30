@@ -3,7 +3,11 @@ package iuh.vn.edu.fit.backend.models;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
+//@NamedQueries({
+//        @NamedQuery(name = "Order.getAll", query = "FROM Order ")
+//})
 @Entity
 @Table(name = "orders")
 public class Order {
@@ -24,11 +28,21 @@ public class Order {
     @JoinColumn(name = "cust_id")
     private Customer customer;
 
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+//    @JoinColumn
+    private List<OrderDetail> orderDetails;
+
     public Order() {
     }
 
     public Order(long id, LocalDateTime orderDate, Employee employee, Customer customer) {
         this.id = id;
+        this.orderDate = orderDate;
+        this.employee = employee;
+        this.customer = customer;
+    }
+
+    public Order(LocalDateTime orderDate, Employee employee, Customer customer) {
         this.orderDate = orderDate;
         this.employee = employee;
         this.customer = customer;
@@ -64,6 +78,14 @@ public class Order {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public List<OrderDetail> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(List<OrderDetail> orderDetails) {
+        this.orderDetails = orderDetails;
     }
 
     @Override

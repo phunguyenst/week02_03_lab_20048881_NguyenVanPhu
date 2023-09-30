@@ -22,7 +22,7 @@ public class HelloServlet extends HttpServlet {
         String action = request.getParameter("action");
         if("MappingTable".equals(action)) {
         ProductReponsitory productReponsitory = new ProductReponsitory();
-            System.out.println(productReponsitory.getAll().get(0));
+
 
 //            HttpSession session = request.getSession();
 //            response.setContentType("text/html");

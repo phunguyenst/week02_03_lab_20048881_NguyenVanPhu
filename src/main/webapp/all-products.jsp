@@ -35,8 +35,7 @@
 <%--                for (Product product:products) {--%>
 <%--                    System.out.println("xuất "+product);--%>
 
-<%--           %>--%>
-<c:forEach items="${products}" var="product">
+<%--           %>--%><c:forEach items="${products}" var="product">
     <tr>
         <td>${product.id}</td>
         <td>${product.name}</td>

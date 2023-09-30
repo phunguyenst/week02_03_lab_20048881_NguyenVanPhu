@@ -1,5 +1,7 @@
 package iuh.vn.edu.fit.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.json.bind.annotation.JsonbDateFormat;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -7,9 +9,14 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "product_price")
+
+@NamedQueries({
+        @NamedQuery(name = "ProductPrice.getProductNewPrice", query = "FROM ProductPrice WHERE product.id = :productId order by priceDateTime desc")
+})
 public class ProductPrice {
 
     @Id
+//    @JsonbDateFormat(value = "yyyy-MM-dd")
     @Column(name = "price_date_time", columnDefinition = "datetime(6)")
     private LocalDateTime priceDateTime;
 
@@ -17,8 +24,9 @@ public class ProductPrice {
 
     private double price;
 
+    @JsonBackReference
     @Id
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", columnDefinition = "bigint(20)")
     private Product product;
 
@@ -88,7 +96,6 @@ public class ProductPrice {
                 "priceDateTime=" + priceDateTime +
                 ", note='" + note + '\'' +
                 ", price=" + price +
-                ", product=" + product +
                 '}';
     }
 }

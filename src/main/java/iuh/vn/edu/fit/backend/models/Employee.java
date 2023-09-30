@@ -1,13 +1,23 @@
 package iuh.vn.edu.fit.backend.models;
 
-import iuh.vn.edu.fit.enums.EmployeeStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+import iuh.vn.edu.fit.backend.converters.EmployeeStatusConverter;
+import iuh.vn.edu.fit.backend.enums.EmployeeStatus;
+
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "employee")
+@NamedQueries({
+        //@NamedQuery(name = "Employee.getAll", query = "FROM Employee "),
+        @NamedQuery(name = "Employee.updateStatus", query = "UPDATE Employee  SET status = :status WHERE id = :id")
+})
 public class Employee {
     //employee (emp_id, full_name, dob, email, phone, address, status)
     @Id
@@ -17,8 +27,11 @@ public class Employee {
 
     @Column(name = "full_name")
     private String fullName;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonSerialize(using = LocalDateSerializer.class)
     @Column(columnDefinition = "datetime(6)")
-    private LocalDateTime dob;
+    private LocalDate dob;
 
     private String email;
 
@@ -26,16 +39,28 @@ public class Employee {
     private String phone;
 
     private String address;
-
-    @Enumerated(EnumType.ORDINAL)
-    @Column(columnDefinition = "int")
+    @Convert(converter = EmployeeStatusConverter.class)
+    @Column(columnDefinition = "INT(11)")
     private EmployeeStatus status;
+
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+//    @JoinColumn
+    private List<Order> lstOrder;
 
     public Employee() {
     }
 
-    public Employee(long id, String fullName, LocalDateTime dob, String email, String phone, String address, EmployeeStatus status) {
+    public Employee(long id, String fullName, LocalDate dob, String email, String phone, String address, EmployeeStatus status) {
         this.id = id;
+        this.fullName = fullName;
+        this.dob = dob;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.status = status;
+    }
+
+    public Employee(String fullName, LocalDate dob, String email, String phone, String address, EmployeeStatus status) {
         this.fullName = fullName;
         this.dob = dob;
         this.email = email;
@@ -56,7 +81,7 @@ public class Employee {
         return fullName;
     }
 
-    public LocalDateTime getDob() {
+    public LocalDate getDob() {
         return dob;
     }
 
@@ -80,9 +105,7 @@ public class Employee {
         this.fullName = fullName;
     }
 
-    public void setDob(LocalDateTime dob) {
-        this.dob = dob;
-    }
+
 
     public void setEmail(String email) {
         this.email = email;
@@ -96,12 +119,26 @@ public class Employee {
         this.address = address;
     }
 
-    public EmployeeStatus getStatus() {
-        return status;
-    }
+
 
     public void setStatus(EmployeeStatus status) {
         this.status = status;
+    }
+
+    public List<Order> getLstOrder() {
+        return lstOrder;
+    }
+
+    public void setLstOrder(List<Order> lstOrder) {
+        this.lstOrder = lstOrder;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public EmployeeStatus getStatus() {
+        return status;
     }
 
     @Override
@@ -115,5 +152,18 @@ public class Employee {
                 ", address='" + address + '\'' +
                 ", status=" + status +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

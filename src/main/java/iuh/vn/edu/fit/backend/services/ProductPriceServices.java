@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-public class ProductPriceService {
+public class ProductPriceServices {
 
     private ProductPriceRepository productPriceRepository;
 

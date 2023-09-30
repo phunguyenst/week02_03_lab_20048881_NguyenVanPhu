@@ -1,7 +1,7 @@
 package iuh.vn.edu.fit.backend.resources;
 
 import iuh.vn.edu.fit.backend.models.ProductPrice;
-import iuh.vn.edu.fit.backend.services.ProductPriceService;
+import iuh.vn.edu.fit.backend.services.ProductPriceServices;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 
@@ -12,10 +12,10 @@ import java.util.Optional;
 @Path("/productPrice")
 public class ProductPriceResource {
 
-    private ProductPriceService service;
+    private ProductPriceServices service;
 
     public ProductPriceResource() {
-       service = new ProductPriceService();
+       service = new ProductPriceServices();
     }
 
     @POST

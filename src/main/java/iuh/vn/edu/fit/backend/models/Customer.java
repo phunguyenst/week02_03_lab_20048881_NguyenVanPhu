@@ -3,9 +3,13 @@ package iuh.vn.edu.fit.backend.models;
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "customer")
+//@NamedQueries({
+//        @NamedQuery(name = "Customer.getAll", query = "FROM Customer")
+//})
 public class Customer {
     //customer (cust_id, cust_name, email, phone, address)
     @Id
@@ -22,13 +26,20 @@ public class Customer {
     private String address;
 
 
-    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private List<Order> orderList;
     public Customer() {
     }
 
     public Customer(long id, String name, String email, String phone, String address) {
         this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+    }
+
+    public Customer(String name, String email, String phone, String address) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -93,5 +104,18 @@ public class Customer {
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return id == customer.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
