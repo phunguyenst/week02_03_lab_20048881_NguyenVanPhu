@@ -1,5 +1,6 @@
 package iuh.vn.edu.fit.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -20,11 +21,12 @@ public class Order {
     @Column(name = "order_date", columnDefinition = "datetime(6)")
     private LocalDateTime orderDate;
 
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "emp_id")
     private Employee employee;
-
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cust_id")
     private Customer customer;
 

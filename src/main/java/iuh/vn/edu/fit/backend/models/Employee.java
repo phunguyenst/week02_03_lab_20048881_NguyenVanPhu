@@ -1,6 +1,7 @@
 package iuh.vn.edu.fit.backend.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import iuh.vn.edu.fit.backend.converters.EmployeeStatusConverter;
@@ -45,6 +46,7 @@ public class Employee {
 
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
 //    @JoinColumn
+    @JsonManagedReference
     private List<Order> lstOrder;
 
     public Employee() {

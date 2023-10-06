@@ -1,7 +1,10 @@
 package iuh.vn.edu.fit.backend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -26,8 +29,10 @@ public class Customer {
     private String address;
 
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    private List<Order> orderList;
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private List<Order> orderList = new ArrayList<>();
     public Customer() {
     }
 
@@ -103,6 +108,7 @@ public class Customer {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
+                ", orderList=" + orderList +
                 '}';
     }
 

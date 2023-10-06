@@ -9,66 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="update pull">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/converters/EmployeeStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/converters/ObjectMapperContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/converters/ProductStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/enums/EmployeeStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/enums/ProductStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/GenericCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/OrderDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/CustomerResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/EmployeeResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderDetailResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductImageResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/CustomerServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/EmployeeServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderDetailServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/ControlServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/model/CustomerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/model/EmployeeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/model/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CRUDProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/deleteProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/insertProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pageCustomer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pageEmployee.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pageProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="add all product">
+      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/AddToCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/configs/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/configs/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/ProductPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductPriceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductPriceResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/EmployeeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductPriceServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/all-products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all-products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pageProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pageProduct.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -356,7 +308,11 @@
       <workItem from="1695824232435" duration="6019000" />
       <workItem from="1695995031541" duration="357000" />
       <workItem from="1696083126789" duration="4741000" />
-      <workItem from="1696087961337" duration="1808000" />
+      <workItem from="1696087961337" duration="2117000" />
+      <workItem from="1696260609141" duration="118000" />
+      <workItem from="1696476849078" duration="4078000" />
+      <workItem from="1696485679897" duration="1895000" />
+      <workItem from="1696488925393" duration="13964000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -366,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694965083740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add all product">
+      <option name="closed" value="true" />
+      <created>1696090043220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696090043220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +338,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config JPA and create entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="config JPA and create entity" />
+    <MESSAGE value="add all product" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

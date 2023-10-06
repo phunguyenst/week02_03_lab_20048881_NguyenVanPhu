@@ -2,11 +2,13 @@ package iuh.vn.edu.fit.backend.services;
 
 
 import iuh.vn.edu.fit.backend.enums.ProductStatus;
+import iuh.vn.edu.fit.backend.models.Cart;
 import iuh.vn.edu.fit.backend.models.Product;
 import iuh.vn.edu.fit.backend.repositories.ProductReponsitory;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -50,6 +52,10 @@ public class ProductServices {
     }
     public List<Product> getAllProductsWithImages() {
         return productReponsitory.getAllProductsWithImages();
+    }
+
+    public List<Cart> getCartProducts(ArrayList<Cart> cartlist){
+        return productReponsitory.getCartProducts(cartlist);
     }
 
 

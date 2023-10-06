@@ -1,6 +1,7 @@
 package iuh.vn.edu.fit.backend.repositories;
 
 import iuh.vn.edu.fit.backend.enums.ProductStatus;
+import iuh.vn.edu.fit.backend.models.Cart;
 import iuh.vn.edu.fit.backend.models.Product;
 import iuh.vn.edu.fit.backend.models.ProductPrice;
 import jakarta.persistence.EntityManager;
@@ -138,28 +139,48 @@ public class ProductReponsitory {
             logger.info(e.getMessage());
         }
     }
-//  public List<Product> getAllProductWithPrices(){
-//        EntityTransaction tr = em.getTransaction();
-//        List<Product> productList = new ArrayList<>();
-//
-//        try {
-//            String jpql = "SELECT DISTINCT p FROM Product p LEFT JOIN FETCH p.productImageList";
-//            TypedQuery<Product> query = em.createQuery(jpql, Product.class);
-//            List<Product> products = query.getResultList();
-//
-//            for (Product product : products) {
-//                String priceJpql = "SELECT pp FROM ProductPrice pp WHERE pp.id = :productId ORDER BY pp.priceDateTime DESC";
-//                TypedQuery<ProductPrice> priceQuery = em.createQuery(priceJpql, ProductPrice.class);
-//                priceQuery.setParameter("productId", product.getId());
-//                priceQuery.setMaxResults(1);
-//                List<ProductPrice> prices = priceQuery.getResultList();
-//
-//                if (!prices.isEmpty()) {
-//                    ProductPrice latestPrice = prices.get(0);
-//                    product.setPrice(latestPrice.getPrice());
-//                }
-//
-//                productsWithPrices.add(product);
-//        }
-//  }
+    public List<Cart> getCartProducts(ArrayList<Cart> cartlist){
+
+        List<Cart> result = new ArrayList<Cart>();
+
+        try {
+
+            if(cartlist!= null && !cartlist.isEmpty()){
+                for (Cart item: cartlist){
+                    TypedQuery<Product> query = em.createQuery("SELECT p FROM Product p WHERE p.id = :id", Product.class);
+                    query.setParameter("id", item.getId());
+                    List<Product> products = query.getResultList();
+                    if(!products.isEmpty()){
+                        Product product = products.get(0);
+                        TypedQuery<ProductPrice> priceQuery = em.createQuery(
+                                "SELECT pp FROM ProductPrice pp WHERE pp.product = :product ORDER BY pp.priceDateTime DESC", ProductPrice.class);
+                        priceQuery.setParameter("product", product);
+                        priceQuery.setMaxResults(1);
+
+                        List<ProductPrice> priceResult = priceQuery.getResultList();
+                        if(!priceResult.isEmpty()){
+                            ProductPrice latestPrice = priceResult.get(0);
+                            Cart row = new Cart();
+                            row.setId(product.getId());
+                            row.setName(product.getName());
+                            row.setDescription(product.getDescription());
+                            row.setUnit(product.getUnit());
+                            row.setManufacturerName(product.getManufacturerName());
+                            row.setStatus(product.getStatus());
+                            row.setQuantity(item.getQuantity());
+                            row.setTotalPrice(latestPrice.getPrice() * item.getQuantity());
+
+                            result.add(row);
+                        }
+
+                    }
+                }
+            }
+        }catch (Exception e){
+            logger.info(e.getMessage());
+        }
+        return result;
+    }
+
+
 }
