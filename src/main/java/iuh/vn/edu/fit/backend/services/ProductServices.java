@@ -58,6 +58,8 @@ public class ProductServices {
         return productReponsitory.getCartProducts(cartlist);
     }
 
-
+    public double getTotalCartPrice(ArrayList<Cart> cartList){
+        return  productReponsitory.getTotalCartPrice(cartList);
+    }
 
 }

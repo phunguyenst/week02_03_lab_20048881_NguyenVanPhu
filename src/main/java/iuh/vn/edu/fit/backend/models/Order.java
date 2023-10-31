@@ -11,7 +11,7 @@ import java.util.List;
 //})
 @Entity
 @Table(name = "orders")
-public class Order {
+public class Order{
     //order (order_id, order_date, emp_id, cust_id)
     @Id
     @Column(name = "order_id", columnDefinition = "bigint(20)")

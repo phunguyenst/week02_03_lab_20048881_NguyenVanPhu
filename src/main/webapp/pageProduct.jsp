@@ -1,6 +1,8 @@
 <%@ page import="iuh.vn.edu.fit.backend.models.Product" %>
 <%@ page import="iuh.vn.edu.fit.backend.services.ProductServices" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.util.*" %>
+<%@ page import="iuh.vn.edu.fit.backend.models.Cart" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: admin
   Date: 9/27/2023
@@ -20,6 +22,12 @@
     <%
         ProductServices productServices = new ProductServices();
         List<Product> lst = productServices.getAll();
+
+        ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+        if(cart_list != null) {
+
+            request.setAttribute("cart_list", cart_list);
+        }
     %>
     <div class="container">
         <a class="btn btn-primary btn-sm" href="CRUDProduct.jsp">Quản lý sản phẩm</a>

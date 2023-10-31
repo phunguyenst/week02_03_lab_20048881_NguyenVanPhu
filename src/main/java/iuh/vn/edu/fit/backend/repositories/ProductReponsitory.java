@@ -181,6 +181,35 @@ public class ProductReponsitory {
         }
         return result;
     }
+    public double getTotalCartPrice(ArrayList<Cart> cartList){
+        double sum = 0;
 
+        try {
+            if(cartList.size()>0){
+                for (Cart item : cartList){
+                    TypedQuery<Product> productQuery = em.createQuery("SELECT p FROM Product p WHERE p.id = :id", Product.class);
+                    productQuery.setParameter("id", item.getId());
+                    List<Product> products = productQuery.getResultList();
+                    if (!products.isEmpty()) {
+                        Product product = products.get(0);
+                        TypedQuery<ProductPrice> priceQuery = em.createQuery(
+                                "SELECT pp FROM ProductPrice pp WHERE pp.product = :product ORDER BY pp.priceDateTime DESC", ProductPrice.class);
+                        priceQuery.setParameter("product", product);
+                        priceQuery.setMaxResults(1);
+
+                        List<ProductPrice> priceResult = priceQuery.getResultList();
+                        if (!priceResult.isEmpty()) {
+                            ProductPrice latestPrice = priceResult.get(0);
+                            double itemPrice = latestPrice.getPrice() * item.getQuantity();
+                            sum += itemPrice;
+                        }
+                    }
+                }
+            }
+        }catch (Exception e){
+            logger.info(e.getMessage());
+        }
+        return sum;
+    }
 
 }

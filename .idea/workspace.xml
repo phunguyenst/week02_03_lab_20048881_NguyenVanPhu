@@ -9,17 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="add all product">
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/AddToCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="image product">
+      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/OrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/QuantityIncDecServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/repositories/ProductReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/resources/OrderResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderDetailServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderDetailServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/OrderServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/services/ProductServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/AddToCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/AddToCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pageProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pageProduct.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +60,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -87,7 +91,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab1/week01_lab_NguyenVanPhu_20048881&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab4/NguyenVanPhu_20048881_Week4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -168,7 +172,7 @@
       <deployment>
         <artifact name="Gradle : iuh.vn.edu.fit : lab_week2_20048881_NguyenVanPhu-1.0-SNAPSHOT.war">
           <settings>
-            <option name="CONTEXT_PATH" value="/20048881_NguyenVanPhu" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -313,6 +317,15 @@
       <workItem from="1696476849078" duration="4078000" />
       <workItem from="1696485679897" duration="1895000" />
       <workItem from="1696488925393" duration="13964000" />
+      <workItem from="1696581433673" duration="957000" />
+      <workItem from="1697184170980" duration="4918000" />
+      <workItem from="1697205752491" duration="4863000" />
+      <workItem from="1697855831273" duration="4200000" />
+      <workItem from="1698224684625" duration="917000" />
+      <workItem from="1698248216270" duration="31000" />
+      <workItem from="1698289182406" duration="4676000" />
+      <workItem from="1698327951269" duration="132000" />
+      <workItem from="1698673914393" duration="6690000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -330,7 +343,31 @@
       <option name="project" value="LOCAL" />
       <updated>1696090043220</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update front_end and mvc">
+      <option name="closed" value="true" />
+      <created>1696581494636</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696581494637</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update file sql">
+      <option name="closed" value="true" />
+      <created>1696581621362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696581621362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="image product">
+      <option name="closed" value="true" />
+      <created>1696581697716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696581697716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +376,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config JPA and create entity" />
     <MESSAGE value="add all product" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all product" />
+    <MESSAGE value="update front_end and mvc" />
+    <MESSAGE value="update file sql" />
+    <MESSAGE value="image product" />
+    <option name="LAST_COMMIT_MESSAGE" value="image product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
