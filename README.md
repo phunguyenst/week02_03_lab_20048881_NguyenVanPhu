@@ -1,5 +1,4 @@
 # week02_lab_20048881_NguyenVanPhu
-<<<<<<< HEAD
 # Projects Jakarta EE Week 2 + 3
 - Sinh viên: **Nguyễn Văn Phú**
 - Hướng dẫn: **TS. Võ Văn Hải**
@@ -83,6 +82,7 @@
 ![img.png](img.png)
 
 ## Quản lý sản phẩm
+- hiển thị các sản phẩm ở trạng thái active
 ![img_1.png](img_1.png)
 -sản phẩm bị xóa chuyển trạng thái ACTIVE thành TERMINATED
 ![img_4.png](img_4.png)
