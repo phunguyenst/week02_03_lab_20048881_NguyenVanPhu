@@ -13,6 +13,9 @@
 - Các thao tác CRUD cho các đối tượng, lập order. (dùng JPA).
 - Thống kê order theo ngày, theo khoảng thời gian.
 - Thống kê order theo nhân viên bán hàng trong 1 khoảng thời gian.
+-**Diagram:**
+![img_6.png](img_6.png)
+<br>
 - **API:** sử dụng tool postman & API Endpoints
 - ## CRUD
 -   **Employee**
@@ -69,7 +72,7 @@
   -   Create: `POST /api/product-prices`
   -   Update: `PUT /api/product-prices`
 
-## Font-end
+## Front-end
 - **Ý tưởng:** Làm dựa trên mô hình MVC. <br>
 - **Sử dụng:** `REST API Jakarta EE`  `CRUD JPA` <br>
 - **Mô tả:**<br>
@@ -92,4 +95,6 @@
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
 **video demo**
-[2023-11-16 11-47-40.mp4](..%2F..%2F..%2Fvideothi%2F2023-11-16%2011-47-40.mp4)
+-local: [2023-11-16 11-47-40.mp4](2023-11-16%2011-47-40.mp4)
+<br>
+-youtube: https://youtu.be/WmjT2s6tg9o

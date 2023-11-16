@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="trình bày" />
+    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="trình bày">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +80,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab7.1/www_week7&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -319,6 +321,7 @@
       <workItem from="1699108965852" duration="341000" />
       <workItem from="1699776784421" duration="26000" />
       <workItem from="1700103796661" duration="4321000" />
+      <workItem from="1700123161971" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -384,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700110335273</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="trình bày">
+      <option name="closed" value="true" />
+      <created>1700123393748</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700123393748</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
