@@ -37,7 +37,7 @@
 <%--    </div>--%>
 
 <a href="pageEmployee.jsp">quản lý nhân viên</a>
-<a href="pageCustomer.jsp">quản lý sản phẩm</a>
+<a href="pageCustomer.jsp">quản lý khách hàng</a>
 <a href="pageProduct.jsp">danh sách sản phẩm</a>
 
 </body>

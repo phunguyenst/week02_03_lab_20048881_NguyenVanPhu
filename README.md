@@ -78,12 +78,18 @@
   việc thanh toán qua thẻ nếu có thể)
 - - Thống kê order theo ngày, theo khoảng thời gian.
 - Thống kê order theo nhân viên bán hàng trong 1 khoảng thời gian.
+**Demo giao diện kèm video**
 ## Danh sách sản phẩm
 ![img.png](img.png)
 
 ## Quản lý sản phẩm
 ![img_1.png](img_1.png)
+-sản phẩm bị xóa chuyển trạng thái ACTIVE thành TERMINATED
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
 
 ## giỏ hàng
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
+**video demo**
+[2023-11-16 11-47-40.mp4](..%2F..%2F..%2Fvideothi%2F2023-11-16%2011-47-40.mp4)

@@ -9,8 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="cart, order product">
+    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="add readme file">
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/frontend/controllers/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iuh/vn/edu/fit/backend/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CRUDProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CRUDProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/deleteProduct.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/insertProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/insertProduct.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +90,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab4/NguyenVanPhu_20048881_Week4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/BTHH_WWW/lab7.1/www_week7&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -315,7 +325,12 @@
       <workItem from="1698289182406" duration="4676000" />
       <workItem from="1698327951269" duration="132000" />
       <workItem from="1698673914393" duration="6690000" />
-      <workItem from="1698721850956" duration="2542000" />
+      <workItem from="1698721850956" duration="2788000" />
+      <workItem from="1698832467785" duration="236000" />
+      <workItem from="1699004919503" duration="236000" />
+      <workItem from="1699108965852" duration="341000" />
+      <workItem from="1699776784421" duration="26000" />
+      <workItem from="1700103796661" duration="4249000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -365,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698722034398</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add readme file">
+      <option name="closed" value="true" />
+      <created>1698724623747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698724623747</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +401,8 @@
     <MESSAGE value="update file sql" />
     <MESSAGE value="image product" />
     <MESSAGE value="cart, order product" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart, order product" />
+    <MESSAGE value="add readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

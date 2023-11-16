@@ -37,6 +37,8 @@ dependencies {
     implementation('org.jboss.weld.se:weld-se-core:5.1.0.Final')
     //for convert type in rest
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.2'
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.2'
 
     implementation 'jakarta.json:jakarta.json-api:2.1.2'
 

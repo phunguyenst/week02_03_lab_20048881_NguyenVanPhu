@@ -37,8 +37,8 @@
                 <%
         for (Product products: lst) {
             long id = products.getId();
-            String delete = "controls?action=delete_product&id=" + id;
-            String update = "controls?action=update_product&id=" + id;
+            String delete = "ProductControl?action=delete&id=" + id;
+            String update = "ProductControl?action=update&id=" + id;
                 %>
                     <tr>
                         <td><%=id%></td>

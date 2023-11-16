@@ -33,6 +33,7 @@ public class Product implements Serializable {
     @Convert(converter = ProductStatusConverter.class)
     @Column(columnDefinition = "INT(11)")
     private ProductStatus status;
+
     @JsonManagedReference
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ProductImage> productImageList = new ArrayList<>();
