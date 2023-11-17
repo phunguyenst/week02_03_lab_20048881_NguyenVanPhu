@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="trình bày">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7c4d00a6-7f12-4aa8-ac60-c0745f2fb1e2" name="Changes" comment="trình bày" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,6 +320,7 @@
       <workItem from="1699776784421" duration="26000" />
       <workItem from="1700103796661" duration="4321000" />
       <workItem from="1700123161971" duration="456000" />
+      <workItem from="1700126036898" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="config JPA and create entity">
       <option name="closed" value="true" />
@@ -395,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700123393748</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="trình bày">
+      <option name="closed" value="true" />
+      <created>1700126270058</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700126270058</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

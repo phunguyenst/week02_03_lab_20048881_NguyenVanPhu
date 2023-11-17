@@ -1,7 +1,7 @@
 # week02_lab_20048881_NguyenVanPhu
 # Projects Jakarta EE Week 2 + 3
 - Sinh viên: **Nguyễn Văn Phú**
-- Hướng dẫn: **TS. Võ Văn Hải**
+
 # Trang web bán hàng
 
 ## BackEnd
